@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碳排放数据平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>全国城镇污水厂碳排放数据平台</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">数据概览</a></li>
+                    <li><a href="#">团队介绍</a></li>
+                    <li><a href="#">碳排放计算器</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="chart">
+                <h2>全国城镇污水厂碳排放总量 (Mt CO₂e)</h2>
+                <div class="chart-info">
+                    <span>最低值: 6.38 (2006年)</span>
+                    <span>峰值: 27.73 (2019年)</span>
+                </div>
+                <canvas id="emissionChart"></canvas>
+                <canvas id="doughnutChart" style="margin-top: 20px;"></canvas>
+            </div>
+            <div class="map">
+                <h2>中国地图</h2>
+                <div id="chinaMap" style="height: 500px;"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 碳排放数据平台</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
